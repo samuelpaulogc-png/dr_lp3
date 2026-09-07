@@ -80,7 +80,7 @@ h1,h2,h3{font-family:"Goldoni","Playfair Display",Georgia,serif;font-weight:600;
 .nav-links{display:flex;align-items:center;gap:var(--s1);list-style:none;margin:0;padding:0}
 .nav-links a{display:block;text-decoration:none;font-weight:600;font-size:14px;color:var(--on-dark-2);padding:10px var(--s4);border-radius:var(--r-pill);transition:color var(--mo-1) var(--ease),background var(--mo-1) var(--ease)}
 .nav-links a:hover{color:var(--gold)}
-.nav-links a.btn-secondary{color:var(--navy);background:var(--gold);box-shadow:none;margin-left:var(--s3)}
+.nav-links a.btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px var(--s5);font-weight:700;color:var(--navy);background:var(--gold);box-shadow:none;margin-left:var(--s3)}
 .nav-links a.btn-secondary:hover{background:var(--sand)}
 .nav-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:var(--r-sm);width:44px;height:44px;flex:none;cursor:pointer;color:var(--off)}
 .nav-mobile-cta{display:none}
@@ -602,7 +602,7 @@ footer a{text-decoration:none;transition:color var(--mo-2) var(--ease),border-co
   .nav-links{position:absolute;top:100%;left:var(--gutter);right:var(--gutter);flex-direction:column;align-items:stretch;gap:var(--s1);background:var(--navy-900);border:1px solid var(--line);border-radius:0 0 var(--r-md) var(--r-md);padding:var(--s3);display:none;box-shadow:var(--sh-md)}
   .nav-links.open{display:flex;animation:menuIn var(--mo-3) var(--ease)}
   .nav-links a{padding:14px var(--s4);font-size:var(--text-body)}
-  .nav-links a.btn-secondary{margin:var(--s2) 0 0;text-align:center}
+  .nav-links a.btn-secondary{width:100%;min-height:48px;padding:14px var(--s4);margin:var(--s2) 0 0;text-align:center}
   .hero .sub,.hero .microcopy{max-width:none}
   .hero{--text-hero:clamp(32px,9.8vw,52px);--text-hero-detail:clamp(23px,5.9vw,28px)}
   .hero-title-detail{margin-top:var(--s4);max-width:540px}
