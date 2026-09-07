@@ -111,15 +111,18 @@ main .hero{background:var(--navy);color:var(--off);position:relative;overflow:hi
 .hero-meta-line>svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--gold)}
 .hero-meta-separator{display:none}
 /* Credenciais: pausa explicita; no touch a faixa pode ser arrastada. */
-.proof{position:relative;background:var(--navy-900);padding:20px 0;overflow:hidden;border-bottom:1px solid var(--line)}
-.marquee{display:flex;width:max-content;animation:marquee 46s linear infinite}
-.proof:hover .marquee,.proof:focus-within .marquee,.proof.is-paused .marquee{animation-play-state:paused}
+.proof{position:relative;background:var(--navy-900);padding:var(--s5) 0;overflow:hidden;border-block:1px solid rgba(var(--gold-rgb),.22)}
+.proof::before,.proof::after{content:"";position:absolute;top:0;bottom:0;width:clamp(24px,5vw,80px);z-index:1;pointer-events:none}
+.proof::before{left:0;background:linear-gradient(90deg,var(--navy-900),transparent)}
+.proof::after{right:0;background:linear-gradient(270deg,var(--navy-900),transparent)}
+.marquee{display:flex;width:max-content;animation:marquee 60s linear infinite}
 .marquee-track{display:flex;align-items:center;list-style:none;margin:0;padding:0;flex:none}
-.marquee-track li{display:inline-flex;align-items:center;color:var(--on-dark-2);font-weight:600;font-size:var(--text-small);padding:2px var(--s6);white-space:nowrap;border-left:1px solid var(--line)}
-.proof-toggle{position:absolute;right:var(--s3);top:50%;transform:translateY(-50%);width:36px;height:36px;border:1px solid var(--line);border-radius:50%;color:var(--off);background:var(--navy-900);cursor:pointer;display:grid;place-items:center}
-.proof-toggle svg{width:16px;height:16px}
-.proof-toggle .play,.proof.is-paused .proof-toggle .pause{display:none}
-.proof.is-paused .proof-toggle .play{display:block}
+.marquee-track li{display:inline-flex;align-items:center;gap:var(--s7);color:var(--on-dark-2);font-weight:500;font-size:var(--text-small);line-height:1.6;padding:0 var(--s5);white-space:nowrap}
+.marquee-track li::before{content:"";width:4px;height:4px;flex:none;background:var(--gold);transform:rotate(45deg)}
+@media(max-width:768px){
+  .proof{padding-block:20px}
+  .marquee-track li{gap:var(--s6);padding-inline:var(--s4)}
+}
 @keyframes marquee{to{transform:translateX(-50%)}}
 .sec-surface{background:var(--surface)}
 .sec-dark{background:var(--navy);color:var(--off)}
@@ -509,17 +512,65 @@ blockquote.quote cite{font-style:normal;font-weight:700;color:var(--gold);font-s
   .finalcta .figure{margin-inline:var(--s4)}
   .finalcta .btn-primary{font-size:14px;padding-left:var(--s4)}
 }
-footer{background:var(--navy-900);color:var(--on-dark-4);padding:var(--s8) 0 var(--s6);font-size:var(--text-small)}
-.foot-grid{display:grid;grid-template-columns:1.4fr .7fr 1fr;gap:var(--s7)}
+/* Rodape: assinatura da marca, contatos e navegacao com respiro proprio. */
+footer{position:relative;background:radial-gradient(ellipse at 10% 0,rgba(var(--gold-rgb),.045),transparent 60%),var(--navy-900);color:var(--on-dark-4);padding:var(--s8) 0 var(--s5);font-size:var(--text-small)}
+footer::before{content:"";position:absolute;inset:0 0 auto;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--gold-rgb),.45),transparent);pointer-events:none}
+.foot-grid{display:grid;grid-template-columns:1.2fr .65fr 1.15fr;gap:var(--s8)}
+.foot-grid>*{min-width:0}
 footer b,footer strong{color:var(--off)}
-.foot-brand .mark{height:52px;width:auto;margin-bottom:var(--s5)}
-.foot-brand p{margin:var(--s2) 0 0;line-height:1.7;overflow-wrap:anywhere}
-.foot-col h2{font-family:inherit;font-size:var(--text-small);font-weight:600;color:var(--off);margin:0 0 var(--s5);line-height:1.5;text-wrap:wrap}
-.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:var(--s3)}
-.foot-col a{text-decoration:none;transition:color var(--mo-1) var(--ease)}
-.foot-col a:hover{color:var(--gold)}
-.foot-legal{border-top:1px solid var(--line);margin-top:var(--s7);padding-top:var(--s5);font-size:13px;color:var(--on-dark-4)}
-.foot-legal p{margin:0;line-height:1.6}
+footer a{text-decoration:none;transition:color var(--mo-2) var(--ease),border-color var(--mo-2) var(--ease),background var(--mo-2) var(--ease)}
+.foot-logo{display:inline-block;border-radius:var(--r-sm)}
+.foot-logo img{width:220px;height:auto}
+.foot-brand p{margin:var(--s5) 0 0;line-height:1.85;font-size:13px}
+.foot-brand b{display:block;font-size:var(--text-small);margin-bottom:var(--s1)}
+.foot-contacts{display:grid;gap:var(--s2);margin-top:var(--s5)}
+.foot-contact{display:flex;align-items:center;gap:var(--s3);min-height:48px;width:fit-content;max-width:100%;border-radius:var(--r-sm)}
+.foot-icon{display:grid;place-items:center;flex:none;width:38px;height:38px;border:1px solid rgba(var(--gold-rgb),.25);border-radius:50%;color:var(--gold)}
+.foot-icon svg,.foot-detail>svg{width:18px;height:18px;flex:none}
+.foot-contact-label{display:block;font-size:11px;color:var(--ink-3);line-height:1.5;margin-bottom:2px}
+.foot-contact-value{overflow-wrap:anywhere}
+.foot-col h2{font-family:inherit;font-size:12px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);margin:var(--s2) 0 var(--s5);line-height:1.5;text-wrap:wrap}
+.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:var(--s1)}
+.foot-col li a{display:flex;align-items:center;min-height:44px;width:fit-content;max-width:100%;gap:var(--s3);border-radius:var(--s1)}
+.foot-col li:last-child a{color:var(--gold)}
+.foot-nav-arrow{width:16px;height:16px}
+.foot-details{display:grid;gap:var(--s5)}
+.foot-detail{display:flex;align-items:flex-start;gap:var(--s3);line-height:1.8}
+.foot-detail>svg{color:var(--gold);margin-top:4px}
+.foot-detail p,.foot-detail address{margin:0;font-style:normal}
+.foot-detail strong{display:block;font-weight:500;margin-bottom:var(--s1)}
+.foot-detail address{font-size:13px;color:var(--on-dark-4)}
+.foot-hours{padding-top:var(--s4);border-top:1px solid rgba(var(--gold-rgb),.18);font-size:12px;color:var(--ink-3)}
+.foot-legal{display:flex;align-items:center;justify-content:space-between;gap:var(--s5);border-top:1px solid rgba(var(--gold-rgb),.2);margin-top:var(--s7);padding-top:var(--s5);font-size:12px;color:var(--ink-3)}
+.foot-legal p{margin:0;line-height:1.8}
+.foot-top{display:inline-flex;align-items:center;gap:var(--s3);flex:none;min-height:44px;border-radius:var(--r-pill);color:var(--on-dark-4)}
+.foot-top .foot-icon{width:36px;height:36px}
+@media(hover:hover){
+  footer a:hover{color:var(--sand)}
+  .foot-contact:hover .foot-icon,.foot-top:hover .foot-icon{border-color:var(--gold);background:rgba(var(--gold-rgb),.08)}
+}
+@media(max-width:960px){
+  .foot-grid{grid-template-columns:1.1fr .65fr 1.1fr;gap:var(--s6)}
+  .foot-logo img{width:200px}
+}
+@media(max-width:768px){
+  .foot-grid{grid-template-columns:1fr 1.2fr;gap:var(--s7) var(--s6)}
+  .foot-brand{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;column-gap:var(--s6)}
+  .foot-logo{grid-column:1;width:fit-content}
+  .foot-brand p{grid-column:1}
+  .foot-contacts{grid-column:2;grid-row:1/3;align-content:center;margin-top:0}
+}
+@media(max-width:540px){
+  footer{padding-top:var(--s7)}
+  .foot-grid{grid-template-columns:1fr;gap:var(--s6)}
+  .foot-brand{display:block;grid-column:auto}
+  .foot-contacts{margin-top:var(--s5)}
+  .foot-col{padding-top:var(--s5);border-top:1px solid rgba(var(--gold-rgb),.18)}
+  .foot-col h2{margin:0 0 var(--s4)}
+  .foot-col ul{grid-template-columns:1fr 1fr;column-gap:var(--s5)}
+  .foot-details{gap:var(--s4)}
+  .foot-legal{align-items:flex-start;flex-direction:column;gap:var(--s4);margin-top:var(--s6)}
+}
 .wa-float{position:fixed;right:var(--s5);bottom:var(--s5);z-index:90;width:56px;height:56px;border-radius:50%;background:var(--whatsapp);color:var(--navy);display:grid;place-items:center;box-shadow:var(--sh-md);transition:transform var(--mo-2) var(--ease),opacity var(--mo-2) var(--ease)}
 .wa-float:hover{transform:translateY(-3px)}
 .js .wa-float{opacity:0;visibility:hidden}
@@ -542,7 +593,6 @@ footer b,footer strong{color:var(--off)}
   .hero-bg{order:2;position:relative;inset:auto;width:100%;margin-top:var(--s5);height:clamp(280px,65vw,480px)}
   .hero-bg img{object-position:50% 22%}
   .hero-bg::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(var(--navy),rgba(var(--navy-rgb),0) 64px)}
-  .foot-grid{gap:var(--s5)}
 }
 @media(max-width:768px){
   :root{--gutter:20px;--sec-tight:56px;--sec-base:64px;--sec-air:72px;--text-card:20px}
@@ -567,29 +617,19 @@ footer b,footer strong{color:var(--off)}
   .ic{margin-bottom:var(--s4);width:44px;height:44px}
   .media-split{margin-top:var(--s5)}
   .figure.fill{height:clamp(240px,64vw,340px)}
-  .foot-grid{grid-template-columns:1fr 1fr;gap:var(--s6) var(--s5)}
-  .foot-brand{grid-column:1/-1}
   .wa-float{display:none}
 }
 @media(max-width:360px){
   :root{--gutter:16px}
   .nav-mobile-cta{padding:10px 12px;font-size:12px}
-  .foot-grid{grid-template-columns:1fr}
-  .foot-brand{grid-column:auto}
-}
-@media(hover:none){
-  .proof{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--navy-500) var(--navy-900)}
-  .marquee{animation:none}
-  .marquee-track[aria-hidden="true"],.proof-toggle{display:none}
-  .marquee-track li{padding-inline:var(--s5)}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
   .js .reveal{opacity:1;transform:none}
   .marquee{width:auto;justify-content:center}
   .marquee-track{flex-wrap:wrap;justify-content:center}
-  .marquee-track li{white-space:normal;padding:var(--s2) var(--s4)}
-  .marquee-track[aria-hidden="true"],.proof-toggle{display:none}
+  .marquee-track li{white-space:normal;padding:var(--s2) var(--s4);gap:var(--s3);max-width:100%}
+  .marquee-track[aria-hidden="true"],.proof::before,.proof::after{display:none}
 }
 @media(prefers-reduced-transparency:reduce){
   .site-header,.site-header.scrolled{background:var(--navy-900);backdrop-filter:none}
@@ -659,7 +699,7 @@ footer b,footer strong{color:var(--off)}
   </div>
 </section>
 
-<aside class="proof" tabindex="0" aria-label="Credenciais do Dr. Rafael Gallassini">
+<aside class="proof" aria-label="Credenciais do Dr. Rafael Gallassini">
   <div class="marquee">
     <ul class="marquee-track">
       <li>Médico · CRM/SC 21664</li>
@@ -680,10 +720,6 @@ footer b,footer strong{color:var(--off)}
       <li>Emagrecimento, saúde metabólica e longevidade</li>
     </ul>
   </div>
-  <button class="proof-toggle" type="button" aria-label="Pausar movimento das credenciais" aria-pressed="false">
-    <svg class="pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3h3v10H4zm5 0h3v10H9z"/></svg>
-    <svg class="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="m5 2 9 6-9 6z"/></svg>
-  </button>
 </aside>
 
 <section id="reconhece" aria-labelledby="reconhece-title" class="reveal">
@@ -1067,32 +1103,53 @@ footer b,footer strong{color:var(--off)}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img class="mark" src="assets/Logos/rg_ico_light.png" alt="" aria-hidden="true"
-             width="317" height="557" decoding="async">
-        <p><b>Dr. Rafael Gallassini · Médico</b><br>CRM/SC 21664 · Pós-graduação em Nutrologia</p>
-        
-        <p style="margin-top:16px">Endereço: Av. Mauro Ramos, 1213 - Centro, Florianópolis - SC, 88020-303<br>
-        WhatsApp: +55 48 99970-9753<br>
-        Instagram: <a href="https://www.instagram.com/dr.rafaelgalassini" target="_blank" rel="noopener">@dr.rafaelgalassini</a></p>
+        <a class="foot-logo" href="#inicio" aria-label="Dr. Rafael Gallassini · Início">
+          <img src="assets/Logos/rg_hrz_light.png" alt="Dr. Rafael Gallassini" width="747" height="285" decoding="async">
+        </a>
+        <p><b>Dr. Rafael Gallassini · Médico</b>CRM/SC 21664 · Pós-graduação em Nutrologia</p>
+        <div class="foot-contacts">
+          <a class="foot-contact" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">
+            <span class="foot-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a9 9 0 0 1-13 8L3 21l1.5-5A9 9 0 1 1 21 11.5Z"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.7-2.8-2-3.5-3.5l1-1-1-2.5Z"/></svg></span>
+            <span><span class="foot-contact-label">WhatsApp</span><span class="foot-contact-value">+55 48 99970-9753</span></span>
+          </a>
+          <a class="foot-contact" href="https://www.instagram.com/dr.rafaelgalassini" target="_blank" rel="noopener">
+            <span class="foot-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+            <span><span class="foot-contact-label">Instagram</span><span class="foot-contact-value">@dr.rafaelgalassini</span></span>
+          </a>
+        </div>
       </div>
       <nav class="foot-col" aria-label="Links do rodapé">
-        <h2>Links</h2>
+        <h2>Navegação</h2>
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#como-funciona">Como funciona</a></li>
           <li><a href="#duvidas">Dúvidas</a></li>
-          <li><a href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">Agendar</a></li>
+          <li><a href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">Agendar <svg class="foot-nav-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></li>
         </ul>
       </nav>
       <div class="foot-col">
         <h2>Atendimento</h2>
-        <p style="margin:0;line-height:1.7">Presencial em Florianópolis<br>Online para todo o Brasil<br>Resposta pela equipe em horário comercial</p>
+        <div class="foot-details">
+          <div class="foot-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><p><strong>Presencial em Florianópolis</strong></p><address>Av. Mauro Ramos, 1213 - Centro,<br>Florianópolis - SC, 88020-303</address></div>
+          </div>
+          <div class="foot-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+            <p><strong>Online para todo o Brasil</strong></p>
+          </div>
+          <div class="foot-detail foot-hours">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <p>Resposta pela equipe em horário comercial</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="foot-legal">
 
       <p>© 2026 Dr. Rafael Gallassini. Todos os direitos reservados.</p>
+      <a class="foot-top" href="#inicio">Voltar ao topo <span class="foot-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5m-5 5 5-5 5 5"/></svg></span></a>
     </div>
   </div>
 </footer>
@@ -1144,13 +1201,6 @@ footer b,footer strong{color:var(--off)}
   window.addEventListener('scroll',requestScroll,{passive:true});
   window.addEventListener('resize',requestScroll,{passive:true});
   updateScroll();
-  var proof=document.querySelector('.proof');
-  var pause=document.querySelector('.proof-toggle');
-  if(proof&&pause)pause.addEventListener('click',function(){
-    var paused=proof.classList.toggle('is-paused');
-    pause.setAttribute('aria-pressed',String(paused));
-    pause.setAttribute('aria-label',paused?'Retomar movimento das credenciais':'Pausar movimento das credenciais');
-  });
   var motion=window.matchMedia('(prefers-reduced-motion:reduce)');
   var reveals=document.querySelectorAll('.reveal:not([hidden])');
   var observer;
