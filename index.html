@@ -1,0 +1,1170 @@
+<!doctype html>
+<html lang="pt-BR">
+<!-- Fonte editavel: index.html. Nao regenerar com gerar-dark.py. -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Rafael Gallassini | Emagrecimento e Saúde Metabólica</title>
+<meta name="description" content="Já tentou de tudo para emagrecer e o peso sempre volta? Acompanhamento médico individualizado, com investigação do seu metabolismo e um plano feito para o seu corpo. Presencial em Florianópolis e online. Agende sua avaliação.">
+
+<link rel="icon" type="image/png" href="assets/Logos/rg_ico_dark.png">
+<meta name="theme-color" content="#0F1729">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* Identidade do Dr. Rafael Gallassini. Este index.html e a fonte editavel.
+   design-system.html preserva apenas a referencia historica de outra marca. */
+@font-face{font-family:"Goldoni";src:url("assets/Fontes/goldoni-webfont.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+:root{
+  --navy:#1C2747;--navy-900:#0B111F;--navy-700:#26314F;--navy-500:#3A4463;
+  --gold:#BD9853;--gold-600:#9F8046;--sand:#EADEC3;--off:#F3F4F0;
+  --bg:#0F1729;--surface:#16203A;--surface-card:#1E2A4B;
+  --white:var(--surface-card);--ink:var(--off);--ink-2:#DADCDF;--ink-3:#A5A9B2;--line:#2E3A5A;
+  --on-dark:var(--off);--on-dark-2:#E8E9EA;--on-dark-3:var(--ink-2);--on-dark-4:#C7CACF;--on-dark-5:var(--ink-3);
+  --success:#3DBE5A;--whatsapp:#25D366;--focus:var(--gold);
+  --navy-rgb:28,39,71;--gold-rgb:189,152,83;--white-rgb:255,255,255;
+  --r-sm:8px;--r-md:16px;--r-lg:24px;--r-xl:32px;--r-pill:999px;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:96px;
+  --text-small:14px;--text-body:16px;--text-lead:18px;--text-card:20px;
+  --text-section:clamp(26px,3.2vw,42px);--text-hero:clamp(46px,4.45vw,64px);--text-hero-detail:clamp(26px,2.4vw,34px);
+  --sec-tight:80px;--sec-base:96px;--sec-air:112px;
+  --gutter:24px;--maxw:1128px;--measure:760px;--header-height:79px;
+  --mo-1:120ms;--mo-2:200ms;--mo-3:320ms;--ease:cubic-bezier(.2,.7,.2,1);
+  --sh-sm:0 2px 8px rgba(0,0,0,.08);--sh-md:0 12px 32px rgba(0,0,0,.16);
+  --sh-gold:0 6px 20px rgba(var(--gold-rgb),.16);
+  --ring:linear-gradient(155deg,rgba(var(--white-rgb),.2),rgba(var(--white-rgb),.035) 50%,rgba(var(--white-rgb),.08));
+  --chip-bg:linear-gradient(155deg,rgba(var(--white-rgb),.13),rgba(var(--white-rgb),.04));
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-height) + 20px)}
+body{margin:0;font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:var(--text-body);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+::selection{background:var(--gold);color:var(--navy)}
+a{color:inherit}
+button{font:inherit}
+img{max-width:100%;display:block}
+p{text-wrap:pretty}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding-inline:var(--gutter)}
+main section{padding-block:var(--sec-base)}
+#sobre,#agendar{padding-block:var(--sec-air)}
+#diferenciais,#inclui,#para-quem{padding-block:var(--sec-tight)}
+:where(a,button,summary,[tabindex]):focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--navy);font-weight:700;padding:var(--s3) var(--s5);z-index:200}
+.skip:focus{left:0}
+h1,h2,h3{font-family:"Goldoni","Playfair Display",Georgia,serif;font-weight:600;line-height:1.18;letter-spacing:0;margin:0;text-wrap:balance}
+.h-sec{font-size:var(--text-section);max-width:var(--measure);margin-bottom:var(--s4)}
+.lead,.intro{font-size:var(--text-lead);color:var(--ink-2);max-width:var(--measure);margin:0;line-height:1.6}
+.intro{margin-top:var(--s4)}
+.serif{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:500}
+/* Controles: um acento, tres tamanhos, o mesmo ritmo. */
+.btn{font-family:inherit;font-weight:700;font-size:var(--text-body);border:none;cursor:pointer;border-radius:var(--r-pill);padding:var(--s4) var(--s5);min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:var(--s3);text-decoration:none;text-align:center;line-height:1.4;transition:background var(--mo-2) var(--ease),box-shadow var(--mo-2) var(--ease),transform var(--mo-1) var(--ease),color var(--mo-2) var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--gold);color:var(--navy);box-shadow:var(--sh-gold)}
+.btn-secondary,.btn-outline{background:transparent;color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.btn-lg{min-height:56px;padding:18px var(--s6);font-size:17px}
+.btn-block{width:100%}
+@media(hover:hover){
+  .btn-primary:hover{background:var(--sand);transform:translateY(-2px);box-shadow:0 10px 24px rgba(var(--gold-rgb),.2)}
+  .btn-secondary:hover,.btn-outline:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px)}
+}
+/* Navegacao sempre oferece agendamento, inclusive no celular. */
+.site-header{position:sticky;top:0;z-index:100;background:var(--navy-900);border-bottom:1px solid rgba(var(--gold-rgb),.22);transition:background var(--mo-2) var(--ease),box-shadow var(--mo-2) var(--ease)}
+.site-header.scrolled{background:rgba(11,17,31,.96);backdrop-filter:blur(16px);box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:78px;max-width:var(--maxw);margin:auto;padding:var(--s3) var(--gutter)}
+.brand{display:inline-flex;flex:none;text-decoration:none}
+.brand img{height:52px;width:auto}
+.nav-links{display:flex;align-items:center;gap:var(--s1);list-style:none;margin:0;padding:0}
+.nav-links a{display:block;text-decoration:none;font-weight:600;font-size:14px;color:var(--on-dark-2);padding:10px var(--s4);border-radius:var(--r-pill);transition:color var(--mo-1) var(--ease),background var(--mo-1) var(--ease)}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a.btn-secondary{color:var(--navy);background:var(--gold);box-shadow:none;margin-left:var(--s3)}
+.nav-links a.btn-secondary:hover{background:var(--sand)}
+.nav-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:var(--r-sm);width:44px;height:44px;flex:none;cursor:pointer;color:var(--off)}
+.nav-mobile-cta{display:none}
+/* Hero: foto real e tipografia da marca. */
+main .hero{background:var(--navy);color:var(--off);position:relative;overflow:hidden;padding-block:72px}
+.hero .wrap{position:relative;z-index:2}
+.hero-copy{max-width:620px}
+.hero-bg{position:absolute;inset:0;z-index:0;margin:0;overflow:hidden}
+.hero-bg picture{display:contents}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 34%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,var(--navy) 0%,var(--navy) 44%,rgba(var(--navy-rgb),.95) 51%,rgba(var(--navy-rgb),.5) 63%,rgba(var(--navy-rgb),.08) 75%,rgba(var(--navy-rgb),0) 84%)}
+.hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--gold-rgb),.4) 30%,rgba(var(--gold-rgb),.12) 70%,transparent);z-index:3;pointer-events:none}
+.hero h1{font-size:var(--text-hero);line-height:1.12;color:var(--off);text-wrap:normal}
+.hero-title-main{display:block}
+.hero-title-main em{display:block}
+.hero-title-detail{display:block;margin-top:20px;max-width:550px;font-size:var(--text-hero-detail);line-height:1.28;color:var(--on-dark-2);text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{margin:var(--s5) 0 0;font-size:17px;color:var(--on-dark-3);max-width:525px;line-height:1.7}
+.hero-cta{margin-top:var(--s6);display:flex;flex-wrap:wrap;gap:var(--s4);align-items:center}
+.hero .hero-cta{margin-top:var(--s6)}
+.hero .btn-primary{padding:10px 12px 10px 26px;min-height:60px;gap:20px;background:linear-gradient(115deg,var(--sand) -85%,var(--gold) 75%);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.22),0 8px 24px rgba(var(--gold-rgb),.16);font-size:16px}
+.hero-cta-label{min-width:0}
+.hero-cta-arrow{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--sand);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.12)}
+.hero-cta-arrow svg{width:18px;height:18px;transition:transform var(--mo-2) var(--ease)}
+@media(hover:hover){.hero .btn-primary:hover{background:var(--sand)}.hero .btn-primary:hover .hero-cta-arrow svg{transform:translateX(2px)}}
+.hero .microcopy{margin:var(--s5) 0 0;font-size:13px;color:var(--on-dark-4);max-width:490px;line-height:1.65;display:grid;gap:10px}
+.hero-meta-line{display:flex;align-items:flex-start;gap:10px}
+.hero-meta-line>svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--gold)}
+.hero-meta-separator{display:none}
+/* Credenciais: pausa explicita; no touch a faixa pode ser arrastada. */
+.proof{position:relative;background:var(--navy-900);padding:20px 0;overflow:hidden;border-bottom:1px solid var(--line)}
+.marquee{display:flex;width:max-content;animation:marquee 46s linear infinite}
+.proof:hover .marquee,.proof:focus-within .marquee,.proof.is-paused .marquee{animation-play-state:paused}
+.marquee-track{display:flex;align-items:center;list-style:none;margin:0;padding:0;flex:none}
+.marquee-track li{display:inline-flex;align-items:center;color:var(--on-dark-2);font-weight:600;font-size:var(--text-small);padding:2px var(--s6);white-space:nowrap;border-left:1px solid var(--line)}
+.proof-toggle{position:absolute;right:var(--s3);top:50%;transform:translateY(-50%);width:36px;height:36px;border:1px solid var(--line);border-radius:50%;color:var(--off);background:var(--navy-900);cursor:pointer;display:grid;place-items:center}
+.proof-toggle svg{width:16px;height:16px}
+.proof-toggle .play,.proof.is-paused .proof-toggle .pause{display:none}
+.proof.is-paused .proof-toggle .play{display:block}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.sec-surface{background:var(--surface)}
+.sec-dark{background:var(--navy);color:var(--off)}
+/* Cards de conteudo: superficie discreta, icones com material comum. */
+.cardgrid{display:grid;gap:var(--s5);grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));margin-top:var(--s6)}
+.cardgrid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:linear-gradient(var(--surface-card),var(--surface-card)) padding-box,var(--ring) border-box;border:1px solid transparent;border-radius:var(--r-lg);padding:var(--s5);box-shadow:var(--sh-sm);transition:border-color var(--mo-2) var(--ease)}
+.card:hover{border-color:rgba(var(--gold-rgb),.4)}
+.ic{width:48px;height:48px;border-radius:var(--r-sm);margin-bottom:var(--s5);display:grid;place-items:center;background:var(--chip-bg);border:1px solid rgba(var(--white-rgb),.22);color:var(--off);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.14)}
+.ic svg{width:22px;height:22px}
+.card h3,.step h3{font-size:var(--text-card);line-height:1.28;margin:0 0 var(--s3)}
+.card p,.step p{margin:0;font-size:var(--text-body);color:var(--ink-2);line-height:1.65}
+.media-split{display:grid;grid-template-columns:.72fr 1.28fr;gap:var(--s6);align-items:stretch;margin-top:var(--s6)}
+.media-split .cardgrid{margin:0}
+.figure{margin:0;position:relative;overflow:hidden;border-radius:var(--r-xl);background:var(--surface);border:1px solid var(--line)}
+.figure picture{display:contents}
+.figure img{width:100%;height:100%;object-fit:cover}
+.figure.r-45{aspect-ratio:4/5}.figure.r-34{aspect-ratio:3/4}.figure.r-32{aspect-ratio:3/2}
+.figure.fill{min-height:440px;height:100%}
+.figure.fill img{position:absolute;inset:0;object-position:50% 70%}
+.figure.on-dark{background:var(--navy-700);border-color:var(--navy-500)}
+.turn{margin:var(--s7) auto 0;max-width:48ch;text-align:center;font-size:clamp(22px,2.4vw,28px);line-height:1.45;color:var(--on-dark);letter-spacing:-.01em}
+.turn strong{color:var(--gold);font-weight:500}
+/* Reconhecimento: retrato editorial e leitura mais ampla, sem blocos estreitos. */
+#reconhece .recognition-heading{display:grid;grid-template-columns:1.35fr .8fr;gap:var(--s8);align-items:end}
+#reconhece .h-sec{max-width:none;margin:0;text-wrap:balance}
+#reconhece .h-sec span{color:var(--gold)}
+#reconhece .intro{margin:0;padding-bottom:4px;font-size:var(--text-body);line-height:1.8;max-width:36ch;color:var(--ink-2)}
+#reconhece .media-split{grid-template-columns:.88fr 1.12fr;gap:var(--s8);margin-top:var(--s7);align-items:stretch}
+.recognition-photo{border-radius:var(--r-lg);border-color:rgba(var(--gold-rgb),.3);min-height:540px;box-shadow:0 24px 64px rgba(0,0,0,.16)}
+.recognition-photo img{position:absolute;inset:0;object-position:50% 42%}
+.recognition-photo::after{content:"";position:absolute;inset:var(--s4);border:1px solid rgba(var(--gold-rgb),.35);border-radius:var(--r-sm);pointer-events:none}
+#reconhece .recognition-cards{grid-template-columns:1fr;gap:0;border-top:1px solid rgba(var(--gold-rgb),.35);border-bottom:1px solid rgba(var(--gold-rgb),.35)}
+#reconhece .card{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:var(--s5);row-gap:var(--s3);align-content:center;padding:var(--s5) 0;border:0;border-radius:0;background:none;box-shadow:none;transition:none}
+#reconhece .card+.card{border-top:1px solid var(--line)}
+#reconhece .ic{grid-column:1;grid-row:1 / 3;margin:0;border-radius:50%;color:var(--gold);background:rgba(var(--gold-rgb),.07);border-color:rgba(var(--gold-rgb),.26);box-shadow:inset 0 1px 0 rgba(var(--gold-rgb),.1)}
+#reconhece .card h3{grid-column:2;margin:0;font-size:23px;line-height:1.25;text-wrap:balance}
+#reconhece .card p{grid-column:2;font-size:15px;line-height:1.75}
+#reconhece .turn{position:relative;max-width:770px;margin-top:var(--s7);padding-top:var(--s6);font-size:clamp(23px,2.2vw,28px);line-height:1.55;text-wrap:balance}
+#reconhece .turn::before{content:"";position:absolute;top:0;left:calc(50% - 32px);width:64px;height:1px;background:var(--gold)}
+@media(max-width:1100px) and (min-width:769px){
+  #reconhece .recognition-heading{grid-template-columns:1.3fr 1fr;gap:var(--s6)}
+  #reconhece .media-split{grid-template-columns:.8fr 1.2fr;gap:var(--s6)}
+  #reconhece .card{column-gap:var(--s4)}
+  #reconhece .card h3{font-size:21px}
+}
+@media(max-width:768px){
+  #reconhece .recognition-heading{grid-template-columns:1fr;gap:var(--s5)}
+  #reconhece .h-sec{text-wrap:pretty}
+  #reconhece .intro{max-width:52ch;padding:0;line-height:1.7}
+  #reconhece .media-split{grid-template-columns:1fr;gap:var(--s6);margin-top:var(--s6)}
+  .recognition-photo{min-height:0}
+  .recognition-photo picture{display:block}
+  .recognition-photo img{position:static;width:100%;height:auto;aspect-ratio:4/3;object-position:50% 20%}
+  .recognition-photo::after{inset:var(--s3)}
+  #reconhece .card{grid-template-columns:44px minmax(0,1fr);column-gap:var(--s4);row-gap:var(--s4);padding:var(--s5) 0}
+  #reconhece .ic{grid-row:1;align-self:center}
+  #reconhece .card h3{font-size:22px;align-self:center;text-wrap:pretty}
+  #reconhece .card p{grid-column:1 / -1;font-size:var(--text-body)}
+  #reconhece .turn{margin-top:var(--s6);padding-top:var(--s5)}
+}
+/* Mecanismo: fatores de investigacao, sem sugerir uma sequencia de etapas. */
+#mecanismo{background:radial-gradient(ellipse at 95% 30%,rgba(var(--gold-rgb),.055),transparent 55%),var(--navy)}
+.mech-heading{max-width:950px;margin-bottom:var(--s7)}
+.mech-heading .h-sec{max-width:none;text-wrap:balance}
+.mech-title-lead{display:block;margin-bottom:var(--s4);font-size:clamp(22px,2.25vw,30px);line-height:1.3;color:var(--ink-2)}
+.mech-heading .h-sec em{font-style:normal;color:var(--gold)}
+.mech-heading .intro{max-width:690px;font-size:17px;line-height:1.75;margin-top:var(--s5)}
+.mech{display:grid;grid-template-columns:1.12fr .88fr;gap:var(--s8);align-items:stretch}
+.mech-content{min-width:0}
+.mech-body{margin:0;font-size:var(--text-body);line-height:1.8;color:var(--on-dark-2)}
+.mech-body+.mech-body{margin-top:var(--s5)}
+.mech-body strong{color:var(--sand);font-weight:600}
+.mech-figura{margin:0;border-radius:var(--r-lg);overflow:hidden;border:1px solid rgba(var(--gold-rgb),.3);background:var(--navy-900);position:relative;min-height:540px;box-shadow:0 24px 64px rgba(0,0,0,.18)}
+.mech-figura picture{display:block;height:100%}
+.mech-figura img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.mech-figura::after{content:"";position:absolute;inset:var(--s4);border:1px solid rgba(var(--gold-rgb),.3);border-radius:var(--r-sm);pointer-events:none}
+.mech-factors{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid rgba(var(--gold-rgb),.25);border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(135deg,rgba(var(--gold-rgb),.045),transparent 70%),var(--surface);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.mech-factors li{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:var(--s4);padding:var(--s5);border-top:1px solid rgba(var(--white-rgb),.1)}
+.mech-factors li:nth-child(-n+2){border-top:0}
+.mech-factors li:nth-child(even){border-left:1px solid rgba(var(--white-rgb),.1)}
+.factor-icon{width:28px;height:28px;color:var(--gold);flex-shrink:0}
+.mech-factors .nm{font-size:15px;font-weight:500;color:var(--off);line-height:1.55;text-wrap:pretty}
+.mech-summary{position:relative;margin:var(--s5) 0 var(--s6);padding-left:var(--s5);color:var(--sand);font-size:16px;line-height:1.7;font-weight:500}
+.mech-summary::before{content:"";position:absolute;inset:4px auto 4px 0;width:2px;background:var(--gold)}
+.reinforce{margin:var(--s7) 0 0;font-size:clamp(23px,2.2vw,28px);line-height:1.55;color:var(--on-dark);border-top:1px solid rgba(var(--gold-rgb),.25);padding:var(--s6) var(--s7) 0;text-align:center;text-wrap:balance;letter-spacing:-.01em}
+.reinforce strong{font-weight:500;color:var(--gold)}
+@media(max-width:1100px){
+  .mech{gap:var(--s6)}
+  .mech-factors li{padding:20px}
+}
+@media(max-width:768px){
+  .mech-heading{margin-bottom:var(--s6)}
+  .mech-heading .h-sec{text-wrap:pretty}
+  .mech-title-lead{font-size:21px;line-height:1.4}
+  .mech-heading .intro{font-size:var(--text-body);line-height:1.7}
+  .mech{grid-template-columns:1fr;gap:var(--s6)}
+  .mech-figura{order:-1;min-height:0}
+  .mech-figura img{position:static;height:auto;aspect-ratio:6/5;object-position:50% 48%}
+  .mech-figura::after{inset:var(--s3)}
+  .mech-factors li{padding:20px var(--s4);gap:var(--s3)}
+  .mech-factors .nm{font-size:14px;line-height:1.6}
+  .mech-summary{font-size:15px;padding-left:var(--s4)}
+  .mech-body{line-height:1.75}
+  .reinforce{margin-top:var(--s6);padding:var(--s5) 0 0}
+}
+@media(max-width:360px){
+  .mech-factors{grid-template-columns:1fr}
+  .mech-factors li{flex-direction:row;align-items:center;gap:var(--s4);padding:var(--s4)}
+  .mech-factors li:nth-child(n+2){border-top:1px solid rgba(var(--white-rgb),.1);border-left:0}
+}
+/* Apresentacao editorial: nome, retrato e biografia com hierarquia propria. */
+#sobre{background:radial-gradient(ellipse at 5% 45%,rgba(var(--gold-rgb),.055),transparent 52%),var(--bg)}
+.about{display:grid;grid-template-columns:.95fr 1.05fr;grid-template-areas:"portrait heading" "portrait bio";column-gap:var(--s8);row-gap:var(--s6);align-items:start}
+.about-heading{grid-area:heading;padding-top:var(--s3)}
+.about-heading .h-sec{font-size:clamp(38px,4.25vw,58px);line-height:1.08;margin:0 0 var(--s5)}
+.about-heading .h-sec span{display:block;color:var(--gold);margin-top:var(--s2)}
+.about-heading .lead{font-size:17px;line-height:1.8;color:var(--ink-2);max-width:46ch;margin:0;padding-left:var(--s5);border-left:1px solid rgba(var(--gold-rgb),.65)}
+.about-heading .lead strong{color:var(--off);font-weight:500}
+.portrait{grid-area:portrait;align-self:stretch;background:var(--navy-700);border-radius:var(--r-lg);margin:0;min-height:600px;position:relative;overflow:hidden;border:1px solid rgba(var(--gold-rgb),.3);box-shadow:0 24px 64px rgba(0,0,0,.2)}
+.portrait picture{display:block;height:100%}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait::after{content:"";position:absolute;inset:var(--s4);border:1px solid rgba(var(--gold-rgb),.3);border-radius:var(--r-sm);pointer-events:none}
+.about-body{grid-area:bio;min-width:0}
+.about-body p{font-size:var(--text-body);color:var(--ink-2);margin:0 0 var(--s5);line-height:1.8}
+.about-body strong{color:var(--sand);font-weight:600}
+.about-body .hero-cta{margin-top:var(--s6)}
+.about-body .btn-primary{width:auto;max-width:100%;min-height:60px;padding:10px 12px 10px 24px;font-size:15px;gap:var(--s4);background:linear-gradient(115deg,var(--sand) -85%,var(--gold) 75%);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.22),0 8px 24px rgba(var(--gold-rgb),.16)}
+@media(hover:hover){
+  .about-body .btn-primary:hover{background:var(--sand)}
+  .about-body .btn-primary:hover .hero-cta-arrow svg{transform:translateX(2px)}
+}
+@media(max-width:1100px){
+  .about{column-gap:var(--s6)}
+  .about-heading .h-sec{font-size:46px}
+}
+@media(max-width:768px){
+  .about{grid-template-columns:1fr;grid-template-areas:"heading" "portrait" "bio";gap:var(--s6)}
+  .about-heading{padding:0}
+  .about-heading .h-sec{font-size:clamp(38px,9.5vw,52px)}
+  .about-heading .lead{font-size:var(--text-body);line-height:1.75;padding-left:var(--s4);max-width:52ch}
+  .portrait{min-height:0}
+  .portrait img{position:static;height:auto;aspect-ratio:1;object-position:50% 12%}
+  .portrait::after{inset:var(--s3)}
+  .about-body p{line-height:1.75}
+  .about-body .btn-primary{width:100%;max-width:440px;padding-left:20px;gap:var(--s3)}
+}
+@media(max-width:360px){
+  .about-body .btn-primary{font-size:14px;padding-left:var(--s4)}
+  .about-body .hero-cta-arrow{width:32px;height:32px}
+}
+/* Diferenciais em quatro colunas: uma pausa visual entre retrato e cuidados. */
+#diferenciais{background:radial-gradient(ellipse at 50% 0,rgba(var(--gold-rgb),.055),transparent 65%),var(--surface)}
+#diferenciais .h-sec{max-width:900px;margin:0 auto;text-align:center;text-wrap:balance}
+#diferenciais .h-sec span{display:block;color:var(--gold)}
+.difference-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:var(--s7);border:1px solid rgba(var(--gold-rgb),.3);border-radius:var(--r-lg);overflow:hidden;background:linear-gradient(160deg,rgba(var(--white-rgb),.025),transparent 65%),var(--bg);box-shadow:0 24px 64px rgba(0,0,0,.12)}
+.difference{position:relative;min-width:0;padding:var(--s6) var(--s5);display:grid;grid-template-rows:auto auto 1fr;align-content:start;row-gap:var(--s5)}
+.difference+.difference{border-left:1px solid rgba(var(--white-rgb),.1)}
+.difference::after{content:"";position:absolute;left:var(--s5);right:var(--s5);bottom:0;height:2px;background:linear-gradient(90deg,rgba(var(--gold-rgb),.65),rgba(var(--gold-rgb),.05));pointer-events:none}
+.difference-icon{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;color:var(--gold);border:1px solid rgba(var(--gold-rgb),.3);background:radial-gradient(circle at 30% 20%,rgba(var(--gold-rgb),.1),rgba(var(--gold-rgb),.025));box-shadow:inset 0 1px 0 rgba(var(--gold-rgb),.08)}
+.difference-icon svg{width:25px;height:25px}
+.difference h3{font-size:24px;line-height:1.3;min-height:2.6em;margin:0;text-wrap:balance}
+.difference p{font-size:15px;line-height:1.8;color:var(--ink-2);margin:0}
+.difference p strong{font-weight:500;color:var(--sand)}
+@media(max-width:1100px){
+  .difference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .difference{padding:var(--s6);grid-template-columns:56px minmax(0,1fr);grid-template-rows:auto 1fr;gap:var(--s5)}
+  .difference:nth-child(odd){border-left:0}
+  .difference:nth-child(n+3){border-top:1px solid rgba(var(--white-rgb),.1)}
+  .difference::after{display:none}
+  .difference-icon{align-self:center}
+  .difference h3{align-self:center;min-height:0;text-wrap:pretty}
+  .difference p{grid-column:1/-1;font-size:var(--text-body);line-height:1.75}
+}
+@media(max-width:600px){
+  #diferenciais .h-sec{text-align:left;text-wrap:pretty}
+  .difference-grid{grid-template-columns:1fr;margin-top:var(--s6)}
+  .difference{grid-template-columns:48px minmax(0,1fr);padding:28px var(--s5);gap:var(--s4)}
+  .difference+.difference{border-left:0;border-top:1px solid rgba(var(--white-rgb),.1)}
+  .difference-icon{width:48px;height:48px}
+  .difference-icon svg{width:23px;height:23px}
+  .difference h3{font-size:23px}
+}
+@media(max-width:360px){
+  .difference{padding:var(--s5) var(--s4);column-gap:var(--s3)}
+  .difference h3{font-size:21px}
+}
+/* Cuidados em uma lista editorial, distinta do painel de diferenciais. */
+#inclui{background:radial-gradient(ellipse at 0 30%,rgba(var(--gold-rgb),.04),transparent 50%),var(--bg)}
+.includes-layout{display:grid;grid-template-columns:340px minmax(0,1fr);gap:var(--s8);align-items:start}
+.includes-heading{position:sticky;top:calc(var(--header-height) + var(--s6));padding-top:var(--s6)}
+.includes-heading::before{content:"";position:absolute;left:0;top:0;width:var(--s8);height:1px;background:var(--gold)}
+.includes-heading .h-sec{max-width:none;margin:0;font-size:clamp(26px,3.2vw,40px);line-height:1.2;text-wrap:pretty}
+.includes-heading .h-sec span{color:var(--gold)}
+.includes-heading .intro{max-width:25ch;margin:var(--s5) 0 0;font-size:24px;line-height:1.6;color:var(--ink-2)}
+.includes{list-style:none;margin:0;padding:0;border-top:1px solid rgba(var(--gold-rgb),.35);border-bottom:1px solid rgba(var(--gold-rgb),.35)}
+.includes li{display:grid;grid-template-columns:32px minmax(0,.95fr) minmax(0,1.05fr);gap:var(--s5);align-items:start;padding:28px 0;min-width:0}
+.includes li+li{border-top:1px solid var(--line)}
+.include-icon{display:grid;place-items:center;width:32px;height:32px;color:var(--gold)}
+.include-icon svg{width:28px;height:28px;stroke-width:1.4}
+.includes h3{font-size:23px;line-height:1.35;color:var(--off);margin:0;text-wrap:pretty}
+.includes p{font-size:15px;line-height:1.8;color:var(--ink-2);margin:0;padding-top:2px}
+@media(max-width:1100px){
+  .includes-layout{grid-template-columns:1fr;gap:var(--s7)}
+  .includes-heading{position:relative;top:auto;display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:var(--s7)}
+  .includes-heading .h-sec{max-width:620px}
+  .includes-heading .intro{margin:0;font-size:23px}
+  .includes li{grid-template-columns:32px minmax(0,.95fr) minmax(0,1.05fr)}
+  .includes p{font-size:var(--text-body)}
+}
+@media(max-width:600px){
+  .includes-layout{gap:var(--s6)}
+  .includes-heading{grid-template-columns:1fr;gap:var(--s4);padding-top:var(--s5)}
+  .includes-heading .intro{font-size:22px;max-width:28ch}
+  .includes li{grid-template-columns:28px minmax(0,1fr);column-gap:var(--s4);row-gap:var(--s3);padding:var(--s5) 0}
+  .include-icon{width:28px;height:28px}
+  .include-icon svg{width:26px;height:26px}
+  .includes h3{font-size:23px;align-self:center}
+  .includes p{grid-column:2;padding:0;line-height:1.75}
+}
+@media(max-width:360px){
+  .includes h3{font-size:21px}
+  .includes p{grid-column:1/-1}
+}
+/* Uma sequencia de tres passos, com fotografia e conexoes discretas. */
+#como-funciona{background:radial-gradient(ellipse at 50% 35%,rgba(var(--gold-rgb),.055),transparent 65%),var(--navy)}
+#como-funciona .h-sec{max-width:none;margin:0;font-size:clamp(32px,3.6vw,50px)}
+#como-funciona .h-sec span{color:var(--gold)}
+.steps{list-style:none;margin:var(--s7) 0 0;padding:0;display:grid;gap:var(--s6);grid-template-columns:repeat(3,minmax(0,1fr))}
+.step{position:relative;min-width:0;display:grid;grid-template-rows:auto auto auto 1fr;row-gap:var(--s5);align-content:start}
+.step:not(:last-child)::after{content:"";position:absolute;top:24px;left:64px;width:calc(100% - 48px);height:1px;background:linear-gradient(90deg,rgba(var(--gold-rgb),.55),rgba(var(--gold-rgb),.15));pointer-events:none}
+.step-marker{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(var(--gold-rgb),.55);border-radius:50%;color:var(--sand);font-size:14px;letter-spacing:.08em;line-height:1;font-variant-numeric:tabular-nums;background:rgba(var(--gold-rgb),.035)}
+.step-media{margin:0;border-radius:var(--r-md);border:1px solid rgba(var(--gold-rgb),.25);background:var(--navy-900);box-shadow:0 12px 32px rgba(0,0,0,.14)}
+.step-media picture{display:block}
+.step-media img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;object-position:50% 45%}
+.step:nth-child(2) .step-media img{transform:scale(1.2);transform-origin:50% 20%}
+.step h3{color:var(--off);font-size:24px;line-height:1.35;min-height:2.7em;margin:0;text-wrap:balance}
+.step p{font-size:var(--text-body);line-height:1.75;color:var(--ink-2);margin:0}
+.step p strong{color:var(--sand);font-weight:600}
+#como-funciona .hero-cta{margin-top:var(--s7);justify-content:center}
+#como-funciona .btn-primary{width:auto;max-width:100%;min-height:60px;padding:10px 12px 10px 24px;font-size:15px;gap:var(--s4);background:linear-gradient(115deg,var(--sand) -85%,var(--gold) 75%);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.22),0 8px 24px rgba(var(--gold-rgb),.16)}
+@media(hover:hover){
+  #como-funciona .btn-primary:hover{background:var(--sand)}
+  #como-funciona .btn-primary:hover .hero-cta-arrow svg{transform:translateX(2px)}
+}
+@media(max-width:960px){
+  .steps{grid-template-columns:1fr;gap:var(--s7)}
+  .step{grid-template-columns:48px minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto 1fr;gap:var(--s4) var(--s5)}
+  .step-marker{grid-column:1;grid-row:1/3}
+  .step-media{grid-column:2;grid-row:1/3;align-self:start}
+  .step h3,.step p{grid-column:3;min-height:0;text-wrap:pretty}
+  .step:not(:last-child)::after{top:64px;left:24px;width:1px;height:calc(100% - 32px);background:linear-gradient(rgba(var(--gold-rgb),.5),rgba(var(--gold-rgb),.15))}
+}
+@media(max-width:600px){
+  .steps{margin-top:var(--s6);gap:var(--s6)}
+  .step{grid-template-columns:36px minmax(0,1fr);grid-template-rows:auto auto 1fr;gap:var(--s4)}
+  .step-marker{width:36px;height:36px;font-size:12px;grid-row:1/4}
+  .step-media{grid-column:2;grid-row:1}
+  .step h3,.step p{grid-column:2}
+  .step h3{font-size:23px}
+  .step:not(:last-child)::after{top:48px;left:18px;height:calc(100% - 28px)}
+  #como-funciona .hero-cta{margin-top:var(--s6)}
+  #como-funciona .btn-primary{width:100%;max-width:440px;padding-left:20px;gap:var(--s3)}
+}
+@media(max-width:360px){
+  .step{grid-template-columns:28px minmax(0,1fr);column-gap:var(--s3)}
+  .step-marker{width:28px;height:28px;font-size:11px}
+  .step:not(:last-child)::after{top:40px;left:14px;height:calc(100% - 20px)}
+  .step h3{font-size:21px}
+  #como-funciona .btn-primary{font-size:14px;padding-left:var(--s4)}
+}
+/* Um convite centrado na identificacao, com os cinco criterios positivos. */
+#para-quem{background:var(--surface)}
+.audience{position:relative;padding:var(--s7) var(--s8);border:1px solid rgba(var(--gold-rgb),.3);border-radius:var(--r-xl);background:radial-gradient(ellipse at 50% 0,rgba(var(--gold-rgb),.075),transparent 65%),var(--bg);box-shadow:0 24px 64px rgba(0,0,0,.14)}
+.audience::before{content:"";position:absolute;left:calc(50% - 40px);top:0;width:80px;height:2px;background:var(--gold)}
+#para-quem .h-sec{max-width:760px;margin:0 auto var(--s6);text-align:center;font-size:clamp(30px,3.4vw,46px);line-height:1.2;text-wrap:balance}
+#para-quem .h-sec span{display:block;color:var(--gold)}
+.audience-list{list-style:none;max-width:800px;margin:0 auto;padding:0}
+.audience-list li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:var(--s5);align-items:start;padding:20px 0;border-bottom:1px solid rgba(var(--white-rgb),.1);font-size:17px;line-height:1.8;color:var(--ink-2)}
+.audience-list li:first-child{border-top:1px solid rgba(var(--white-rgb),.1)}
+.audience-list li>span{min-width:0}
+.audience-list li strong{font-weight:600;color:var(--sand)}
+.audience-list li svg{width:28px;height:28px;margin-top:1px;padding:6px;stroke-width:2;color:var(--gold);border:1px solid rgba(var(--gold-rgb),.3);border-radius:50%;background:rgba(var(--gold-rgb),.07)}
+.aud-action{display:flex;justify-content:center;margin-top:var(--s6)}
+.aud-action .btn{width:auto;max-width:100%;min-height:60px;padding:10px 12px 10px 24px;font-size:15px;line-height:1.5;gap:var(--s4);background:linear-gradient(115deg,var(--sand) -85%,var(--gold) 75%);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.22),0 8px 24px rgba(var(--gold-rgb),.16)}
+@media(hover:hover){
+  .aud-action .btn:hover{background:var(--sand)}
+  .aud-action .btn:hover .hero-cta-arrow svg{transform:translateX(2px)}
+}
+@media(max-width:960px){
+  .audience{padding:var(--s7) var(--s6)}
+}
+@media(max-width:600px){
+  .audience{padding:var(--s6) var(--s5);border-radius:var(--r-lg)}
+  #para-quem .h-sec{font-size:30px;margin-bottom:var(--s5)}
+  .audience-list li{grid-template-columns:24px minmax(0,1fr);gap:var(--s3);font-size:var(--text-body);line-height:1.75;padding:var(--s4) 0}
+  .audience-list li svg{width:24px;height:24px;padding:5px}
+  .aud-action .btn{width:100%;font-size:14px;padding-left:var(--s4);gap:var(--s3)}
+  .aud-action .hero-cta-arrow{width:32px;height:32px}
+}
+@media(max-width:360px){
+  .audience{padding-inline:var(--s4)}
+  #para-quem .h-sec{font-size:27px}
+}
+.quotes{display:grid;gap:var(--s5);grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));margin-top:var(--s6)}
+blockquote.quote{margin:0;background:var(--surface-card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:var(--r-md);padding:var(--s5)}
+blockquote.quote p{font-size:var(--text-body);margin:0 0 var(--s4)}
+blockquote.quote cite{font-style:normal;font-weight:700;color:var(--gold);font-size:var(--text-small)}
+/* FAQ: perguntas abertas no layout e respostas com destaque discreto. */
+#duvidas{background:radial-gradient(ellipse at 95% 10%,rgba(var(--gold-rgb),.04),transparent 60%),var(--surface)}
+.faq-wrap{max-width:1008px}
+#duvidas .h-sec{display:flex;align-items:center;gap:var(--s6);max-width:none;margin:0;font-size:clamp(30px,3.4vw,46px)}
+#duvidas .h-sec::after{content:"";flex:1;min-width:var(--s6);height:1px;background:linear-gradient(90deg,rgba(var(--gold-rgb),.45),rgba(var(--gold-rgb),.05))}
+#duvidas .h-sec em{font-style:normal;color:var(--gold)}
+.faq{margin:var(--s7) 0 0;border-top:1px solid rgba(var(--gold-rgb),.35)}
+.faq details{border-bottom:1px solid var(--line);transition:background var(--mo-2) var(--ease),border-color var(--mo-2) var(--ease)}
+.faq details[open]{background:linear-gradient(110deg,rgba(var(--gold-rgb),.055),rgba(var(--white-rgb),.015));border-bottom-color:rgba(var(--gold-rgb),.4)}
+.faq summary{list-style:none;cursor:pointer;padding:var(--s5);font-weight:500;font-size:18px;color:var(--off);display:flex;justify-content:space-between;gap:var(--s6);align-items:center;min-height:88px;line-height:1.6}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::marker{content:""}
+.faq summary:focus-visible{outline-offset:-4px}
+.faq-question{min-width:0;max-width:750px;text-wrap:pretty}
+.faq-toggle{flex:none;display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(var(--gold-rgb),.35);border-radius:50%;color:var(--gold);transition:background var(--mo-2) var(--ease),color var(--mo-2) var(--ease)}
+.faq-toggle svg{width:18px;height:18px}
+.faq-toggle .faq-plus{transform-origin:12px 12px;transition:transform var(--mo-2) var(--ease)}
+.faq details[open] .faq-toggle{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.faq details[open] .faq-plus{transform:scaleY(0)}
+.faq .answer{padding:0 92px var(--s6) var(--s5);color:var(--ink-2);font-size:var(--text-body);line-height:1.8;max-width:900px}
+.faq .answer a{color:var(--sand);text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(var(--gold-rgb),.7)}
+.faq details[open] .answer{animation:faqIn var(--mo-3) var(--ease)}
+@keyframes faqIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media(hover:hover){
+  .faq summary:hover{color:var(--sand);background:rgba(var(--white-rgb),.025)}
+  .faq summary:hover .faq-toggle{border-color:var(--gold)}
+}
+@media(max-width:600px){
+  #duvidas .h-sec{gap:var(--s4)}
+  #duvidas .h-sec::after{display:none}
+  .faq{margin-top:var(--s6)}
+  .faq summary{padding:20px var(--s3);gap:var(--s4);font-size:var(--text-body);min-height:80px;line-height:1.65}
+  .faq-toggle{width:32px;height:32px}
+  .faq .answer{padding:0 var(--s3) var(--s5);font-size:var(--text-body);line-height:1.8}
+}
+/* Fechamento com um retrato real do mesmo ensaio. */
+/* Fechamento com retrato integrado e convite de agendamento em destaque. */
+.finalcta .box{background:radial-gradient(ellipse at 0 0,rgba(var(--gold-rgb),.075),transparent 65%),var(--navy-900);border:1px solid rgba(var(--gold-rgb),.35);border-radius:var(--r-xl);position:relative;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.2)}
+.finalcta .grid{display:grid;grid-template-columns:1.15fr .85fr;grid-template-areas:"heading photo" "body photo";gap:var(--s5) var(--s6);align-items:start}
+.finalcta .inner{grid-area:body;min-width:0;padding:0 0 var(--s7) var(--s7)}
+.finalcta h2{grid-area:heading;font-size:clamp(30px,3.2vw,44px);line-height:1.18;color:var(--off);margin:0;padding:var(--s7) 0 0 var(--s7);text-wrap:pretty}
+.final-title-lead{display:block;margin-bottom:var(--s4);font-size:clamp(22px,2.1vw,28px);line-height:1.35;color:var(--ink-2)}
+.finalcta h2 strong{color:var(--gold);font-weight:600}
+.finalcta p{font-size:var(--text-body);color:var(--ink-2);margin:0 0 var(--s6);line-height:1.8}
+.finalcta .btn-primary{width:auto;max-width:100%;min-height:60px;padding:10px 12px 10px 24px;font-size:15px;gap:var(--s4);background:linear-gradient(115deg,var(--sand) -85%,var(--gold) 75%);box-shadow:inset 0 1px 0 rgba(var(--white-rgb),.22),0 8px 24px rgba(var(--gold-rgb),.16)}
+.finalcta .microcopy{display:grid;gap:var(--s3);margin:var(--s5) 0 0;padding-top:var(--s5);border-top:1px solid rgba(var(--gold-rgb),.2);font-size:12px;color:var(--on-dark-4);line-height:1.7}
+.final-service{display:flex;gap:10px;align-items:flex-start}
+.final-service svg{width:16px;height:16px;flex:none;color:var(--gold);margin-top:2px}
+.final-separator{display:none}
+.finalcta .figure{grid-area:photo;position:relative;margin:0;border:0;border-radius:0;align-self:stretch;min-height:560px;background:var(--navy-900)}
+.finalcta .figure picture{display:block;height:100%}
+.finalcta .figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.finalcta .figure::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,var(--navy-900),transparent 24%)}
+@media(hover:hover){
+  .finalcta .btn-primary:hover{background:var(--sand)}
+  .finalcta .btn-primary:hover .hero-cta-arrow svg{transform:translateX(2px)}
+}
+@media(max-width:1100px){
+  .finalcta h2{padding:var(--s6) 0 0 var(--s6);font-size:34px}
+  .finalcta .inner{padding:0 0 var(--s6) var(--s6)}
+  .final-title-lead{font-size:23px}
+  .finalcta .grid{grid-template-columns:1.2fr .8fr;column-gap:var(--s5)}
+}
+@media(max-width:768px){
+  .finalcta .box{border-radius:var(--r-lg)}
+  .finalcta .grid{grid-template-columns:1fr;grid-template-areas:"heading" "photo" "body";gap:var(--s5)}
+  .finalcta h2{padding:var(--s6) var(--s5) 0;font-size:clamp(30px,5.4vw,38px)}
+  .final-title-lead{font-size:22px}
+  .finalcta .inner{padding:0 var(--s5) var(--s6)}
+  .finalcta .figure{min-height:0;margin-inline:var(--s5);border-radius:var(--r-md);border:1px solid rgba(var(--gold-rgb),.2)}
+  .finalcta .figure img{position:static;height:auto;aspect-ratio:5/4;object-position:50% 18%}
+  .finalcta .figure::after{display:none}
+  .finalcta .btn-primary{width:100%;max-width:440px;padding-left:20px;gap:var(--s3)}
+}
+@media(max-width:360px){
+  .finalcta h2{padding-inline:var(--s4);font-size:28px}
+  .final-title-lead{font-size:21px}
+  .finalcta .inner{padding-inline:var(--s4)}
+  .finalcta .figure{margin-inline:var(--s4)}
+  .finalcta .btn-primary{font-size:14px;padding-left:var(--s4)}
+}
+footer{background:var(--navy-900);color:var(--on-dark-4);padding:var(--s8) 0 var(--s6);font-size:var(--text-small)}
+.foot-grid{display:grid;grid-template-columns:1.4fr .7fr 1fr;gap:var(--s7)}
+footer b,footer strong{color:var(--off)}
+.foot-brand .mark{height:52px;width:auto;margin-bottom:var(--s5)}
+.foot-brand p{margin:var(--s2) 0 0;line-height:1.7;overflow-wrap:anywhere}
+.foot-col h2{font-family:inherit;font-size:var(--text-small);font-weight:600;color:var(--off);margin:0 0 var(--s5);line-height:1.5;text-wrap:wrap}
+.foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:var(--s3)}
+.foot-col a{text-decoration:none;transition:color var(--mo-1) var(--ease)}
+.foot-col a:hover{color:var(--gold)}
+.foot-legal{border-top:1px solid var(--line);margin-top:var(--s7);padding-top:var(--s5);font-size:13px;color:var(--on-dark-4)}
+.foot-legal p{margin:0;line-height:1.6}
+.wa-float{position:fixed;right:var(--s5);bottom:var(--s5);z-index:90;width:56px;height:56px;border-radius:50%;background:var(--whatsapp);color:var(--navy);display:grid;place-items:center;box-shadow:var(--sh-md);transition:transform var(--mo-2) var(--ease),opacity var(--mo-2) var(--ease)}
+.wa-float:hover{transform:translateY(-3px)}
+.js .wa-float{opacity:0;visibility:hidden}
+.js .wa-float.show{opacity:1;visibility:visible}
+/* Entradas discretas sem encadear transformacoes nos cards. */
+.js .reveal{opacity:0;transform:translateY(8px);transition:opacity var(--mo-3) var(--ease),transform var(--mo-3) var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+@keyframes menuIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media(max-width:960px){
+  :root{--sec-tight:64px;--sec-base:80px;--sec-air:88px}
+  .media-split{grid-template-columns:1fr;gap:var(--s5)}
+  .figure.fill{height:clamp(240px,48vw,380px);min-height:0}
+  .figure.fill img{object-position:50% 72%}
+  main .hero{display:flex;flex-direction:column;padding-top:var(--s7);padding-bottom:0}
+  .hero .wrap{order:1}
+  .hero-copy{max-width:720px}
+  .hero{--text-hero:clamp(38px,6.7vw,58px);--text-hero-detail:clamp(24px,3.6vw,30px)}
+  .hero-title-detail{max-width:580px}
+  .hero::before{display:none}
+  .hero-bg{order:2;position:relative;inset:auto;width:100%;margin-top:var(--s5);height:clamp(280px,65vw,480px)}
+  .hero-bg img{object-position:50% 22%}
+  .hero-bg::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(var(--navy),rgba(var(--navy-rgb),0) 64px)}
+  .foot-grid{gap:var(--s5)}
+}
+@media(max-width:768px){
+  :root{--gutter:20px;--sec-tight:56px;--sec-base:64px;--sec-air:72px;--text-card:20px}
+  .nav{gap:var(--s2)}
+  .nav-mobile-cta{display:inline-flex;margin-left:auto;font-size:13px;min-height:40px;padding:10px 14px;box-shadow:none}
+  .nav-toggle{display:grid;place-items:center}
+  .nav-links{position:absolute;top:100%;left:var(--gutter);right:var(--gutter);flex-direction:column;align-items:stretch;gap:var(--s1);background:var(--navy-900);border:1px solid var(--line);border-radius:0 0 var(--r-md) var(--r-md);padding:var(--s3);display:none;box-shadow:var(--sh-md)}
+  .nav-links.open{display:flex;animation:menuIn var(--mo-3) var(--ease)}
+  .nav-links a{padding:14px var(--s4);font-size:var(--text-body)}
+  .nav-links a.btn-secondary{margin:var(--s2) 0 0;text-align:center}
+  .hero .sub,.hero .microcopy{max-width:none}
+  .hero{--text-hero:clamp(32px,9.8vw,52px);--text-hero-detail:clamp(23px,5.9vw,28px)}
+  .hero-title-detail{margin-top:var(--s4);max-width:540px}
+  .hero .sub{font-size:16px;line-height:1.65}
+  .hero .btn-primary{padding:10px 12px 10px 20px;font-size:15px;gap:var(--s3)}
+  .hero .hero-cta{margin-top:var(--s5)}
+  .hero .microcopy{font-size:12px;gap:var(--s2);margin-top:20px}
+  .hero-cta{margin-top:var(--s5)}
+  .btn-lg{width:100%;max-width:440px;padding:var(--s4) var(--s4);font-size:16px}
+  .cardgrid.cols-2{grid-template-columns:1fr}
+  .card{padding:var(--s5)}
+  .ic{margin-bottom:var(--s4);width:44px;height:44px}
+  .media-split{margin-top:var(--s5)}
+  .figure.fill{height:clamp(240px,64vw,340px)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:var(--s6) var(--s5)}
+  .foot-brand{grid-column:1/-1}
+  .wa-float{display:none}
+}
+@media(max-width:360px){
+  :root{--gutter:16px}
+  .nav-mobile-cta{padding:10px 12px;font-size:12px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-brand{grid-column:auto}
+}
+@media(hover:none){
+  .proof{overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--navy-500) var(--navy-900)}
+  .marquee{animation:none}
+  .marquee-track[aria-hidden="true"],.proof-toggle{display:none}
+  .marquee-track li{padding-inline:var(--s5)}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+  .js .reveal{opacity:1;transform:none}
+  .marquee{width:auto;justify-content:center}
+  .marquee-track{flex-wrap:wrap;justify-content:center}
+  .marquee-track li{white-space:normal;padding:var(--s2) var(--s4)}
+  .marquee-track[aria-hidden="true"],.proof-toggle{display:none}
+}
+@media(prefers-reduced-transparency:reduce){
+  .site-header,.site-header.scrolled{background:var(--navy-900);backdrop-filter:none}
+}
+@media(prefers-contrast:more){
+  .card,.step,.faq details,.audience,.figure{border-color:var(--ink-3)}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Dr. Rafael Gallassini · Início">
+      <img src="assets/Logos/rg_hrz_light.png" alt="Dr. Rafael Gallassini"
+           width="747" height="285" decoding="async">
+    </a>
+    <a class="nav-mobile-cta btn btn-primary" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener" aria-label="Agendar avaliação pelo WhatsApp">Agendar</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#duvidas">Dúvidas</a></li>
+      <li class="brand-cta"><a href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" class="btn btn-secondary" target="_blank" rel="noopener">Agendar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  
+  <figure class="hero-bg" aria-hidden="true">
+    <picture>
+      
+      <source media="(max-width:960px)" type="image/avif" srcset="assets/Fotos/dr-rafael-hero-mob-640.avif 640w, assets/Fotos/dr-rafael-hero-mob-900.avif 900w" sizes="100vw">
+      <source media="(max-width:960px)" type="image/webp" srcset="assets/Fotos/dr-rafael-hero-mob-640.webp 640w, assets/Fotos/dr-rafael-hero-mob-900.webp 900w" sizes="100vw">
+      <source media="(max-width:960px)" srcset="assets/Fotos/dr-rafael-hero-mob-640.jpg 640w, assets/Fotos/dr-rafael-hero-mob-900.jpg 900w" sizes="100vw">
+      <source type="image/avif" srcset="assets/Fotos/dr-rafael-hero-1080.avif 1080w, assets/Fotos/dr-rafael-hero-1440.avif 1440w" sizes="100vw">
+      <source type="image/webp" srcset="assets/Fotos/dr-rafael-hero-1080.webp 1080w, assets/Fotos/dr-rafael-hero-1440.webp 1440w" sizes="100vw">
+      <img src="assets/Fotos/dr-rafael-hero-1440.jpg" alt=""
+           width="1440" height="780" fetchpriority="high" decoding="async">
+    </picture>
+  </figure>
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1 id="hero-title"><span class="hero-title-main">Emagrecimento e <em>saúde metabólica</em></span> <span class="hero-title-detail">com acompanhamento médico individualizado em Florianópolis</span></h1>
+      <p class="sub">Um plano feito sob medida para o seu corpo. Investigamos o que trava o seu metabolismo, para você emagrecer com saúde e, dessa vez, manter o resultado.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">
+          <span class="hero-cta-label">Quero agendar minha avaliação</span>
+          <span class="hero-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </a>
+      </div>
+      <p class="microcopy">
+        <span class="hero-meta-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Atendimento presencial em Florianópolis e online para todo o Brasil</span></span>
+        <span class="hero-meta-separator" aria-hidden="true"> · </span>
+        <span class="hero-meta-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Resposta pela nossa equipe em horário comercial</span></span>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<aside class="proof" tabindex="0" aria-label="Credenciais do Dr. Rafael Gallassini">
+  <div class="marquee">
+    <ul class="marquee-track">
+      <li>Médico · CRM/SC 21664</li>
+      <li>Pós-graduação em Nutrologia</li>
+      <li>Mais de 10 anos de atuação</li>
+      <li>Formação internacional</li>
+      <li>Participação em 5 congressos internacionais</li>
+      <li>Mais de 30 mil pacientes acompanhados</li>
+      <li>Emagrecimento, saúde metabólica e longevidade</li>
+    </ul>
+    <ul class="marquee-track" aria-hidden="true">
+      <li>Médico · CRM/SC 21664</li>
+      <li>Pós-graduação em Nutrologia</li>
+      <li>Mais de 10 anos de atuação</li>
+      <li>Formação internacional</li>
+      <li>Participação em 5 congressos internacionais</li>
+      <li>Mais de 30 mil pacientes acompanhados</li>
+      <li>Emagrecimento, saúde metabólica e longevidade</li>
+    </ul>
+  </div>
+  <button class="proof-toggle" type="button" aria-label="Pausar movimento das credenciais" aria-pressed="false">
+    <svg class="pause" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3h3v10H4zm5 0h3v10H9z"/></svg>
+    <svg class="play" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="m5 2 9 6-9 6z"/></svg>
+  </button>
+</aside>
+
+<section id="reconhece" aria-labelledby="reconhece-title" class="reveal">
+  <div class="wrap">
+    <div class="recognition-heading">
+    <h2 class="h-sec" id="reconhece-title">Se você se identifica com pelo menos uma dessas situações, <span>esta página é para você.</span></h2>
+    <p class="intro">Antes de falar de solução, vamos ser honestos sobre o que provavelmente já aconteceu com você:</p>
+    </div>
+
+    <div class="media-split">
+      
+      <figure class="figure recognition-photo">
+        <picture>
+          <source type="image/webp"
+                  srcset="assets/Fotos/reconhece-reflexao-600.webp 600w, assets/Fotos/reconhece-reflexao-900.webp 900w"
+                  sizes="(max-width:360px) calc(100vw - 32px), (max-width:768px) calc(100vw - 40px), (max-width:1100px) 38vw, 450px">
+          <img src="assets/Fotos/reconhece-reflexao-900.jpg"
+             alt="Imagem ilustrativa: mulher em um momento de reflexão, sentada junto à janela"
+             width="900" height="1125" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+
+      <div class="cardgrid recognition-cards">
+      <article class="card">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+        </div>
+        <h3>O efeito sanfona que não acaba</h3>
+        <p>Você perde peso, comemora e, alguns meses depois, está tudo de volta. Às vezes com alguns quilos a mais. Já perdeu a conta de quantas vezes recomeçou do zero.</p>
+      </article>
+      <article class="card">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg>
+        </div>
+        <h3>A disposição que sumiu</h3>
+        <p>Cansaço o dia inteiro, aquela sensação de "corpo pesado", vontade de comer o tempo todo e a impressão de que seu corpo trabalha contra você.</p>
+      </article>
+      <article class="card">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h6"/></svg>
+        </div>
+        <h3>As dietas genéricas que nunca duram</h3>
+        <p>Você já seguiu a dieta da vizinha, o protocolo da internet, o cardápio que funcionou para todo mundo, menos para você. E ficou com a sensação de que o problema era falta de disciplina.</p>
+      </article>
+      <article class="card">
+        <div class="ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.35-9.5-8.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6.5C19 16.65 12 21 12 21Z"/><path d="m9.5 12 1.8 1.8L15 10"/></svg>
+        </div>
+        <h3>A frustração de "já tentei de tudo"</h3>
+        <p>Nutricionista, academia, remédio por conta própria, jejum, low carb. Você tentou. E cada tentativa que não durou machucou um pouco mais a sua confiança.</p>
+      </article>
+      </div>
+    </div>
+
+    <p class="turn serif">Você não falhou em todas essas vezes. <strong class="serif">Você foi tratado como uma média.</strong> E o seu corpo não é uma média.</p>
+  </div>
+</section>
+
+<section class="sec-dark" id="mecanismo" aria-labelledby="mecanismo-title">
+  <div class="wrap reveal">
+    <div class="mech-heading">
+      <h2 class="h-sec" id="mecanismo-title"><span class="mech-title-lead">Emagrecer não é sobre comer menos.</span> É sobre <em>entender por que</em> o seu corpo não está deixando você emagrecer.</h2>
+        <p class="intro">A maior parte das tentativas fracassa porque ataca só o sintoma, o peso na balança, e ignora a causa.</p>
+    </div>
+    <div class="mech">
+      <div class="mech-content">
+
+        <ul class="mech-factors">
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9Z"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M20 16.5l-2.6-1.5M4 16.5l2.6-1.5"/></svg><span class="nm">Alterações hormonais</span></li>
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s-7 7.5-7 12a7 7 0 0 0 14 0c0-4.5-7-12-7-12Z"/><path d="M9 15h6M12 12v6"/></svg><span class="nm">Resistência à insulina</span></li>
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3a8.5 8.5 0 1 0 10 10.5Z"/><path d="M17 3v4M15 5h4"/></svg><span class="nm">Qualidade do sono</span></li>
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 4-10 10a4.25 4.25 0 0 0 6 6L20 10a4.25 4.25 0 0 0-6-6Z"/><path d="m8 10 6 6m0-9 3-3"/></svg><span class="nm">Uso de medicações</span></li>
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="12" r="7"/><path d="M2 3v5a2 2 0 0 0 4 0V3M4 3v18M14 8a4 4 0 0 1 4 4"/></svg><span class="nm">Histórico de dietas restritivas</span></li>
+          <li><svg class="factor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-6 4 12 3-6h4"/><path d="M4 6a10 10 0 0 1 16 0M4 18a10 10 0 0 0 16 0"/></svg><span class="nm">Até o seu nível de estresse</span></li>
+        </ul>
+        <p class="mech-summary">Influenciam diretamente o quanto o seu corpo guarda ou queima de gordura.</p>
+
+        <p class="mech-body">Como médico com pós-graduação em Nutrologia, o Dr. Rafael investiga esse conjunto <strong>antes</strong> de propor qualquer plano.</p>
+        <p class="mech-body">É construído um caminho individual, com ajuste do que for necessário e acompanhamento de perto para que o resultado <strong>se sustente</strong>, em vez de virar mais um ciclo de perder e recuperar.</p>
+      </div>
+
+      <figure class="mech-figura">
+        <picture>
+          <source type="image/avif" srcset="assets/Fotos/dr-rafael-mecanismo-600.avif 600w, assets/Fotos/dr-rafael-mecanismo-900.avif 900w" sizes="(max-width:360px) calc(100vw - 32px), (max-width:768px) calc(100vw - 40px), (max-width:1100px) 40vw, 448px">
+          <source type="image/webp" srcset="assets/Fotos/dr-rafael-mecanismo-600.webp 600w, assets/Fotos/dr-rafael-mecanismo-900.webp 900w" sizes="(max-width:360px) calc(100vw - 32px), (max-width:768px) calc(100vw - 40px), (max-width:1100px) 40vw, 448px">
+          <img src="assets/Fotos/dr-rafael-mecanismo-900.jpg" alt="Dr. Rafael Gallassini sentado no consultório"
+               width="900" height="1200" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+
+    <p class="reinforce serif">Sem cardápio de gaveta. Sem promessa mágica. <strong>Um plano que faz sentido</strong> para a sua rotina, o seu corpo e a sua história.</p>
+  </div>
+</section>
+
+<section id="sobre" aria-labelledby="sobre-title" class="reveal">
+  <div class="wrap">
+    <div class="about">
+      <header class="about-heading">
+        <h2 class="h-sec" id="sobre-title">Dr. Rafael <span>Gallassini</span></h2>
+        <p class="lead">Emagrecimento e saúde metabólica: <strong>investigação, ciência e acompanhamento próximo.</strong></p>
+      </header>
+      <figure class="portrait">
+        <picture>
+          <source type="image/avif" srcset="assets/Fotos/dr-rafael-sobre-600.avif 600w, assets/Fotos/dr-rafael-sobre-840.avif 840w" sizes="(max-width:360px) calc(100vw - 32px), (max-width:768px) calc(100vw - 40px), (max-width:1100px) 43vw, 483px">
+          <source type="image/webp" srcset="assets/Fotos/dr-rafael-sobre-600.webp 600w, assets/Fotos/dr-rafael-sobre-840.webp 840w" sizes="(max-width:360px) calc(100vw - 32px), (max-width:768px) calc(100vw - 40px), (max-width:1100px) 43vw, 483px">
+          <img src="assets/Fotos/dr-rafael-sobre-840.jpg" alt="Dr. Rafael Gallassini"
+               width="840" height="1050" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <div class="about-body">
+        <p>Médico (CRM/SC 21664) com pós-graduação em Nutrologia e formação internacional, com <strong>mais de 10 anos de experiência</strong> e participação em <strong>5 congressos internacionais</strong>. Atua com foco em emagrecimento, saúde metabólica, prevenção e longevidade.</p>
+        <p>Atende em consultório em Florianópolis e por teleconsulta para todo o Brasil, com <strong>mais de 30 mil pacientes acompanhados</strong>. Sua prática tem uma regra: investigar antes de prescrever. O plano nasce dos exames, da história e da rotina de cada paciente, e é ajustado nos retornos.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener"><span>Quero começar minha avaliação</span>
+            <span class="hero-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="sec-surface reveal" id="diferenciais" aria-labelledby="dif-title">
+  <div class="wrap">
+    <h2 class="h-sec" id="dif-title">O que torna esse acompanhamento <span>diferente do que você já tentou</span></h2>
+
+    <div class="difference-grid">
+      <article class="difference">
+        <div class="difference-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.9-3.9"/></svg>
+        </div>
+        <h3>Investigação antes do plano</h3>
+        <p>Nada de cardápio pronto no primeiro dia. Primeiro entendemos o que está travando o seu metabolismo, usando <strong>história, exames e composição corporal</strong>.</p>
+      </article>
+      <article class="difference">
+        <div class="difference-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg>
+        </div>
+        <h3>Plano 100% individualizado</h3>
+        <p>Seu corpo, sua rotina, suas preferências e suas limitações. O plano é <strong>feito para você conseguir seguir</strong>, e não para caber num modelo padrão.</p>
+      </article>
+      <article class="difference">
+        <div class="difference-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 3 4-6"/><path d="M16 8h4v4"/><path d="M16 19h5"/></svg>
+        </div>
+        <h3>Foco em manter o resultado</h3>
+        <p>O objetivo não é a próxima balança boa. É você não precisar recomeçar nunca mais, com <strong>acompanhamento próximo</strong> e ajustes ao longo do caminho.</p>
+      </article>
+      <article class="difference">
+        <div class="difference-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3v6.2L4.6 18A2 2 0 0 0 6.3 21h11.4a2 2 0 0 0 1.7-3L14 9.2V3"/><path d="M9 3h6"/><path d="M7.5 15h9"/></svg>
+        </div>
+        <h3>Ciência, sem modismo</h3>
+        <p>Condutas <strong>baseadas em evidência</strong>, com uso responsável de medicações quando há indicação clínica, e sem promessas milagrosas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="inclui" aria-labelledby="inclui-title" class="reveal">
+  <div class="wrap includes-layout">
+    <div class="includes-heading">
+    <h2 class="h-sec" id="inclui-title">O que está incluído no seu <span>acompanhamento</span></h2>
+    <p class="intro serif">Um cuidado completo, do diagnóstico ao dia a dia:</p>
+    </div>
+
+    <ul class="includes">
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M9 10h6m-6 4h6m-6 4h3"/></svg></span>
+        <h3>Avaliação médica completa:</h3>
+        <p>história clínica, hábitos e fatores que influenciam seu peso e sua energia.</p>
+      </li>
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M13 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10l4 4v4M14 3v5h5M6 12l2-2 2 4 2-3"/><circle cx="17" cy="17" r="4"/><path d="m20 20 2 2"/></svg></span>
+        <h3>Solicitação e interpretação de exames:</h3>
+        <p>para investigar hormônios, metabolismo e possíveis causas ocultas.</p>
+      </li>
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M8 21v-5H5l2-5h10l2 5h-3v5M10 16v5m4-5v5M3 5v4m18-4v4"/></svg></span>
+        <h3>Avaliação da composição corporal:</h3>
+        <p>para acompanhar gordura, massa magra e evolução real, além da balança.</p>
+      </li>
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v5c0 5 4 9 9 11 5-2 9-6 9-11V6l-9-4Z"/><path d="M12 8v8m-4-4h8"/></svg></span>
+        <h3>Tratamento medicamentoso quando indicado:</h3>
+        <p>de forma segura, responsável e com acompanhamento médico.</p>
+      </li>
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3 8.5 8.5 0 1 0 20.5 13.5Z"/><path d="M17 2v6m-3-3h6m1 4v4m-2-2h4"/></svg></span>
+        <h3>Ajuste de estilo de vida:</h3>
+        <p>sono, disposição, comportamento alimentar e relação com a comida.</p>
+      </li>
+      <li>
+        <span class="include-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M14 15H6l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v5M8 19h9l5 3V12a2 2 0 0 0-2-2h-3M6 7h8m-8 4h4"/></svg></span>
+        <h3>Suporte da equipe:</h3>
+        <p>canal direto para dúvidas entre as consultas.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec-dark reveal" id="como-funciona" aria-labelledby="cf-title">
+  <div class="wrap">
+    <h2 class="h-sec" id="cf-title">Começar é <span>simples</span></h2>
+
+    <ol class="steps" role="list">
+      <li class="step">
+        <span class="step-marker" aria-hidden="true">01</span>
+        
+        <figure class="figure step-media">
+          <picture>
+            <source type="image/avif" srcset="assets/Fotos/dr-rafael-passo-1-600.avif 600w, assets/Fotos/dr-rafael-passo-1-900.avif 900w" sizes="(max-width:360px) calc(100vw - 72px), (max-width:600px) calc(100vw - 92px), (max-width:960px) 40vw, 339px">
+            <source type="image/webp" srcset="assets/Fotos/dr-rafael-passo-1-600.webp 600w, assets/Fotos/dr-rafael-passo-1-900.webp 900w" sizes="(max-width:360px) calc(100vw - 72px), (max-width:600px) calc(100vw - 92px), (max-width:960px) 40vw, 339px">
+            <img src="assets/Fotos/dr-rafael-passo-1-900.jpg" alt="Imagem ilustrativa: mulher sentada em uma poltrona de couro, escrevendo uma mensagem no celular"
+                 width="900" height="600" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <h3>Você fala com a equipe pelo WhatsApp</h3>
+        <p>Clique no botão, conte rapidamente o seu caso e a nossa equipe te ajuda a agendar a avaliação, presencial em Florianópolis ou online.</p>
+      </li>
+      <li class="step">
+        <span class="step-marker" aria-hidden="true">02</span>
+        
+        <figure class="figure step-media">
+          <picture>
+            <source type="image/webp" srcset="assets/Fotos/dr-rafael-consulta-600.webp 600w, assets/Fotos/dr-rafael-consulta-900.webp 900w" sizes="(max-width:360px) calc(100vw - 72px), (max-width:600px) calc(100vw - 92px), (max-width:960px) 40vw, 339px">
+            <img src="assets/Fotos/dr-rafael-consulta-900.jpg" alt="Retrato do Dr. Rafael Gallassini, de camisa branca e colete azul"
+                 width="900" height="600" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <h3>Avaliação individualizada com o Dr. Rafael</h3>
+        <p>Uma consulta sem pressa, para entender a sua história, pedir os exames necessários e montar um plano feito para o seu corpo.</p>
+      </li>
+      <li class="step">
+        <span class="step-marker" aria-hidden="true">03</span>
+        
+        <figure class="figure step-media">
+          <picture>
+            <source type="image/avif" srcset="assets/Fotos/dr-rafael-passo-3-600.avif 600w, assets/Fotos/dr-rafael-passo-3-900.avif 900w" sizes="(max-width:360px) calc(100vw - 72px), (max-width:600px) calc(100vw - 92px), (max-width:960px) 40vw, 339px">
+            <source type="image/webp" srcset="assets/Fotos/dr-rafael-passo-3-600.webp 600w, assets/Fotos/dr-rafael-passo-3-900.webp 900w" sizes="(max-width:360px) calc(100vw - 72px), (max-width:600px) calc(100vw - 92px), (max-width:960px) 40vw, 339px">
+            <img src="assets/Fotos/dr-rafael-passo-3-900.jpg" alt="Imagem ilustrativa: médico apontando um exame impresso sobre a mesa, ao lado das mãos da paciente"
+                 width="900" height="600" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <h3>Acompanhamento até o resultado se sustentar</h3>
+        <p>Você segue com um plano claro e com acompanhamento próximo, ajustando o caminho até emagrecer <strong>e manter</strong>.</p>
+      </li>
+    </ol>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">
+        <span>Quero dar o primeiro passo agora</span>
+        <span class="hero-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sec-surface reveal" id="para-quem" aria-labelledby="pq-title">
+  <div class="wrap">
+    <div class="audience">
+      <h2 class="h-sec" id="pq-title">Esse acompanhamento <span>é para você se…</span></h2>
+      <ul class="audience-list" role="list">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Você já tentou emagrecer outras vezes e <strong>o peso sempre volta</strong>.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Você sente que <strong>dietas genéricas não funcionam</strong> para o seu corpo.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Você quer entender a <strong>causa</strong> do problema, e não só enxugar a balança.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Você busca um acompanhamento <strong>médico sério, próximo e individualizado</strong>.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Você quer emagrecer com saúde e <strong>manter o resultado a longo prazo</strong>.</span></li>
+        </ul>
+      <div class="aud-action">
+          <a class="btn btn-primary" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">
+            <span>Quero agendar minha avaliação</span>
+            <span class="hero-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pendente: inserir depoimentos reais antes de remover hidden. -->
+<section hidden id="depoimentos" aria-labelledby="dep-title" class="reveal">
+  <div class="wrap">
+    <h2 class="h-sec" id="dep-title">Quem já vive essa mudança</h2>
+
+    <div class="quotes">
+      <blockquote class="quote">
+        <p>"[Depoimento real do paciente. Foco em: já tinha tentado várias vezes, o que mudou no acompanhamento e como se sente hoje.]"</p>
+        <cite>[Nome], [idade/ocupação opcional]</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>"[Depoimento real. Foco em manter o resultado e recuperar disposição.]"</p>
+        <cite>[Nome]</cite>
+      </blockquote>
+      <blockquote class="quote">
+        <p>"[Depoimento real. Foco na diferença do atendimento individualizado.]"</p>
+        <cite>[Nome]</cite>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec-surface reveal" id="duvidas" aria-labelledby="faq-title">
+  <div class="wrap faq-wrap">
+    <h2 class="h-sec" id="faq-title"><span>Dúvidas <em>frequentes</em></span></h2>
+
+    <div class="faq">
+      <details>
+        <summary><span class="faq-question">Qual a diferença entre esse acompanhamento médico e o de um nutricionista?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">O Dr. Rafael é médico, o que permite investigar causas clínicas do ganho de peso, solicitar e interpretar exames e prescrever medicação quando há indicação. Em muitos casos, o ideal é que médico e nutricionista trabalhem de forma complementar. Aqui, a avaliação parte de um olhar médico completo sobre o seu metabolismo.</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">Eu já tentei de tudo e nada durou. Por que agora seria diferente?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">Porque o ponto de partida é diferente. Em vez de te entregar mais uma dieta pronta, primeiro investigamos o que está travando o seu corpo e montamos um plano individualizado, com acompanhamento próximo para que o resultado se mantenha, em vez de virar mais um ciclo de perder e recuperar.</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">O tratamento usa medicação para emagrecer?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">Medicação é uma ferramenta, não a regra. Quando há indicação clínica, ela pode ser usada de forma segura e responsável, sempre com acompanhamento médico e dentro de um plano maior. Nada de automedicação nem "fórmula milagrosa".</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">Atende online ou só presencial?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">Os dois. O atendimento é presencial em Florianópolis e também online por teleconsulta, para pacientes de qualquer lugar do Brasil.</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">Em quanto tempo vou ver resultado?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">Cada corpo responde de um jeito, e é por isso que o acompanhamento é individualizado. O foco não é o resultado mais rápido, e sim o resultado que <strong>se sustenta</strong>. Na avaliação, o Dr. Rafael conversa com você sobre expectativas realistas para o seu caso.</div>
+      </details>
+      <!-- Pendente: confirmar convenios/reembolso antes de remover hidden. -->
+      <details hidden>
+        <summary><span class="faq-question">Atende convênio?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">[Informar: atendimento particular / convênios aceitos / reembolso. Preencher conforme a realidade do consultório.]</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">Como faço para agendar?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        <div class="answer">É só clicar em um dos botões da página. Você fala com a nossa equipe pelo WhatsApp, tira suas dúvidas e agenda a sua avaliação.</div>
+      </details>
+      <details>
+        <summary><span class="faq-question">Onde fica o consultório?</span><span class="faq-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14"/><path class="faq-plus" d="M12 5v14"/></svg></span></summary>
+        
+        <div class="answer">O consultório fica na Av. Mauro Ramos, 1213 — Centro, Florianópolis/SC, CEP 88020-303. <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20Mauro%20Ramos%2C%201213%20-%20Centro%2C%20Florian%C3%B3polis%20-%20SC%2C%2088020-303" target="_blank" rel="noopener">Ver no Google Maps</a>. O atendimento também é feito por teleconsulta, para pacientes de qualquer lugar do Brasil.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="finalcta reveal" id="agendar" aria-labelledby="final-title">
+  <div class="wrap">
+    <div class="box">
+      <div class="grid">
+      <h2 id="final-title"><span class="final-title-lead">Você já tentou sozinho vezes o bastante.</span> Que tal tentar com quem vai olhar para o <strong>seu caso</strong>?</h2>
+      <figure class="figure">
+        <picture>
+          <source type="image/webp" srcset="assets/Fotos/dr-rafael-final-600.webp 600w, assets/Fotos/dr-rafael-final-900.webp 900w" sizes="(max-width:360px) calc(100vw - 68px), (max-width:768px) calc(100vw - 92px), (max-width:1100px) 38vw, 445px">
+          <img src="assets/Fotos/dr-rafael-final-900.jpg" alt="Retrato do Dr. Rafael Gallassini sentado, usando terno azul-claro" width="900" height="1350" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <div class="inner">
+        
+        <p>O próximo recomeço não precisa ser mais um da lista. Com uma investigação real do seu metabolismo e um plano feito para você, dá para emagrecer com saúde e, principalmente, manter. Dê o primeiro passo hoje: fale com a nossa equipe e agende a sua avaliação com o Dr. Rafael.</p>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">
+          <span>Quero agendar minha avaliação agora</span>
+          <span class="hero-cta-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span>
+        </a>
+        <p class="microcopy">
+          <span class="final-service"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Presencial em Florianópolis · Online para todo o Brasil</span></span><span class="final-separator" aria-hidden="true"> · </span><span class="final-service"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Atendimento pela equipe em horário comercial</span></span>
+        </p>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img class="mark" src="assets/Logos/rg_ico_light.png" alt="" aria-hidden="true"
+             width="317" height="557" decoding="async">
+        <p><b>Dr. Rafael Gallassini · Médico</b><br>CRM/SC 21664 · Pós-graduação em Nutrologia</p>
+        
+        <p style="margin-top:16px">Endereço: Av. Mauro Ramos, 1213 - Centro, Florianópolis - SC, 88020-303<br>
+        WhatsApp: +55 48 99970-9753<br>
+        Instagram: <a href="https://www.instagram.com/dr.rafaelgalassini" target="_blank" rel="noopener">@dr.rafaelgalassini</a></p>
+      </div>
+      <nav class="foot-col" aria-label="Links do rodapé">
+        <h2>Links</h2>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener">Agendar</a></li>
+        </ul>
+      </nav>
+      <div class="foot-col">
+        <h2>Atendimento</h2>
+        <p style="margin:0;line-height:1.7">Presencial em Florianópolis<br>Online para todo o Brasil<br>Resposta pela equipe em horário comercial</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+
+      <p>© 2026 Dr. Rafael Gallassini. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5548999709753?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20com%20o%20Dr.%20Rafael" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a equipe do Dr. Rafael">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.5.2.5.4.1.2.1.8-.1 1.4Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var header=document.querySelector('.site-header');
+  var hero=document.querySelector('.hero');
+  var final=document.querySelector('#agendar');
+  var wa=document.querySelector('.wa-float');
+  var toggle=document.getElementById('navToggle');
+  var links=document.getElementById('navLinks');
+  var mobile=window.matchMedia('(max-width:768px)');
+  function closeMenu(returnFocus){
+    if(!toggle||!links)return;
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded','false');
+    toggle.setAttribute('aria-label','Abrir menu de navegação');
+    if(returnFocus)toggle.focus();
+  }
+  if(toggle&&links){
+    toggle.addEventListener('click',function(){
+      var open=links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',String(open));
+      toggle.setAttribute('aria-label',open?'Fechar menu de navegação':'Abrir menu de navegação');
+    });
+    links.addEventListener('click',function(e){if(e.target.closest('a'))closeMenu(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&links.classList.contains('open'))closeMenu(true);});
+    document.addEventListener('click',function(e){if(header&&!header.contains(e.target))closeMenu(false);});
+    document.addEventListener('focusin',function(e){if(header&&!header.contains(e.target))closeMenu(false);});
+    mobile.addEventListener('change',function(){closeMenu(false);});
+  }
+  var ticking=false;
+  function updateScroll(){
+    ticking=false;
+    if(header){header.classList.toggle('scrolled',window.scrollY>4);root.style.setProperty('--header-height',header.offsetHeight+'px');}
+    if(wa&&hero){
+      var passed=hero.getBoundingClientRect().bottom<=(header?header.offsetHeight:0);
+      var finalVisible=final&&final.getBoundingClientRect().top<window.innerHeight;
+      wa.classList.toggle('show',passed&&!finalVisible&&!mobile.matches);
+    }
+  }
+  function requestScroll(){if(!ticking){ticking=true;requestAnimationFrame(updateScroll);}}
+  window.addEventListener('scroll',requestScroll,{passive:true});
+  window.addEventListener('resize',requestScroll,{passive:true});
+  updateScroll();
+  var proof=document.querySelector('.proof');
+  var pause=document.querySelector('.proof-toggle');
+  if(proof&&pause)pause.addEventListener('click',function(){
+    var paused=proof.classList.toggle('is-paused');
+    pause.setAttribute('aria-pressed',String(paused));
+    pause.setAttribute('aria-label',paused?'Retomar movimento das credenciais':'Pausar movimento das credenciais');
+  });
+  var motion=window.matchMedia('(prefers-reduced-motion:reduce)');
+  var reveals=document.querySelectorAll('.reveal:not([hidden])');
+  var observer;
+  function showAll(){reveals.forEach(function(el){el.classList.add('in');});if(observer)observer.disconnect();}
+  if(motion.matches||!('IntersectionObserver' in window)){showAll();}
+  else{
+    observer=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');observer.unobserve(en.target);}});
+    },{threshold:0,rootMargin:'0px 0px -32px 0px'});
+    reveals.forEach(function(el){observer.observe(el);});
+  }
+  motion.addEventListener('change',function(e){if(e.matches)showAll();});
+  root.classList.add('js');
+})();
+</script>
+</body>
+</html>

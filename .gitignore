@@ -1,0 +1,33 @@
+# Arquivos danificados pela falha de disco de 03/09/2026 — não versionar
+*.CORROMPIDO.bak
+
+# Comparativos temporários da sessão de 03/09/2026.
+# O PROJETO.md os marca como descartáveis; dois deles estão corrompidos no disco.
+_variacoes-*.html
+comparacao.html
+secao7.html
+
+# Candidatas de imagem geradas na sessao de 05/09/2026 (Slot 1) + a original
+# rg-09 do ensaio. Ficam FORA do repositorio de proposito: sao material de
+# trabalho, o repo e publico, e as originais do ensaio nao devem ser publicadas.
+# Estao aqui, e nao no scratchpad, porque o scratchpad ja foi limpo uma vez
+# nesta sessao e levou junto os arquivos baixados do Drive.
+assets/Fotos/_candidatas/
+
+# Saidas da skill human-image (Higgsfield/Nano Banana 2). Material de trabalho:
+# candidatas, prompt e brief de cada rodada. Mesmo motivo das _candidatas acima —
+# o repositorio e publico e isto e bancada, nao entrega.
+human-output/
+
+# Originais do ensaio (10/2024). Mesma regra da rg-09 acima: o repositorio e
+# publico e as originais nao devem ser publicadas. Os DERIVADOS recortados
+# (dr-rafael-mecanismo-*, dr-rafael-sobre-*) sao a entrega e continuam versionados.
+assets/Fotos/Rafael Gallassini - Rede Social - Cor - *.jpg
+
+# Masters de imagem gerada largados direto em assets/Fotos/ (05/09/2026).
+# Mesma regra das _candidatas e das originais do ensaio: o repositorio e PUBLICO e
+# master de 7 MB nao e entrega — o que se versiona sao os derivados recortados
+# (dr-rafael-*). O v2.png e a fonte do Slot 1 e continua no disco; o recorte dele
+# esta em _candidatas/reconhece-master.png.
+assets/Fotos/v1.png
+assets/Fotos/v2.png
